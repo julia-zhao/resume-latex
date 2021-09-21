@@ -1,0 +1,71 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Projects}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\newlength{\projlen}
+\settowidth{\projlen}{aaaaaaaaaaaaaaaaaaaaaaaaaa}
+%---------------------------------------------------------
+% \makebox[\projlen][l]{\entrytitlestyle{Automatic Door}}\
+% \cvtag{C}\
+% \cvtag{PCB design}\
+% \cvtag{STM32 microcontroller}\
+% \cvtag{Proteus Design Suite}\
+% \begin{adjustwidth*}{0.3cm}{0cm}
+% \descriptionstyle{Designed, picked out parts, and programmed a PCB connected to an STM32 microcontroller to operate an automatic door equipped with an LCD display. The user can interact with push buttons to set various operation modes, and door parameters such as ramp-up and ramp-down speed.}
+% \end{adjustwidth*}
+
+% %---------------------------------------------------------
+% \makebox[\projlen][l]{\entrytitlestyle{Systolic Array}}\
+% \cvtag{Verilog}\
+% \cvtag{Pipelining}\
+% \cvtag{Finite state machine}\
+% \cvtag{Matrix multiplication}\
+% \begin{adjustwidth*}{0.3cm}{0cm}
+% \descriptionstyle{FPGA board programmed as a module capable of multiplying two same-sized 2D matrices in a systolic fashion. The module uses cascaded counters to scan the elements of the matrices.}
+% \end{adjustwidth*}
+
+%---------------------------------------------------------
+\makebox[\projlen][l]{\entrytitlestyle{Parallel Web Crawler}}\
+\cvtag{C++}\
+\cvtag{Multithreaded}\
+\cvtag{Hash table}\
+\begin{adjustwidth*}{0.3cm}{0cm}
+\descriptionstyle{Web crawler that can find a list of URLs which link to valid PNG images from a specified seed URL. Found URLs are then put into a hash table to avoid duplicate accesses, and a .txt file is generated with a list of all visited URLs at the end of the search.}
+\end{adjustwidth*}
+
+%---------------------------------------------------------
+\makebox[\projlen][l]{\entrytitlestyle{Image Concatenator}}\
+\cvtag{C++}\
+\cvtag{Concurrency}\
+\cvtag{Asynchronous I/O}\
+\cvtag{Semaphores}\
+\begin{adjustwidth*}{0.3cm}{0cm}
+\descriptionstyle{Multithreaded program consisting of producer and consumer threads. Producers can request for PNG image slices from a server, and store the result in a shared fixed-size buffer after validating the contents. Consumer threads may then copy buffer data to shared memory to concatenate each slice into a full image.}
+\end{adjustwidth*}
+
+%---------------------------------------------------------
+\makebox[\projlen][l]{\entrytitlestyle{Real-Time Operating System}}\
+\cvtag{C}\
+\cvtag{Dynamic memory allocation}\
+\cvtag{Task scheduler}\
+\cvtag{Task pre-emption}\
+\cvtag{Interrupt handling}\
+\begin{adjustwidth*}{0.3cm}{0cm}
+\descriptionstyle{Real-time operating system capable of receiving and queuing tasks in accordance to priority. The OS is able to preempt currently running tasks in favour of one that is higher priority.}
+\end{adjustwidth*}
+
+%---------------------------------------------------------
+% \makebox[\projlen][l]{\entrytitlestyle{Shortest Path Calculator}}\
+% \cvtag{C++}\
+% \cvtag{Dijkstra's algorithm}\
+% \cvtag{Min heap priority queue}\
+% \begin{adjustwidth*}{0.3cm}{0cm}
+% \descriptionstyle{A simple program where the user can enter various locations with distances relative to a source location, and it calculates the shortest path to a specified endpoint.}
+% \end{adjustwidth*}
+
+%---------------------------------------------------------

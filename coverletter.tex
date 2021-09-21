@@ -1,0 +1,143 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-emerald}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{./examples/profile}
+\name{Julia}{Zhao}
+\position{UW Co-op{\enskip\cdotp\enskip}4 month}
+% \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+
+\mobile{(+1) 647-920-1107}
+\email{julia.zhao@uwaterloo.ca}
+% \homepage{www.posquit0.com}
+\github{julia-zhao}
+\linkedin{julia-zh}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {Eden Industries\\24407 112a Avenue. \\Maple Ridge, BC V2W 0C8}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Game Programmer Co-op}
+% How the letter is opened
+\letteropening{Dear Eden Industries Recruitment Team,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% \makecvfooter
+%   {\today}
+%   {Claud D. Park~~~·~~~Cover Letter}
+%   {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+Hello! I'm a driven and enthusiastic third year in the UW Computer Engineering program with various co-op experiences in verification, backend development, and frontend development. I was excited to see an opening for an Game Programmer Co-op, and am confident in my ability to be an asset to Eden Industries with the skills and knowledge I have gained over my previous four co-op terms.
+
+\lettersection{Why Me?}
+I'm extremely familiar with C/C++ having worked with it not only for the majority of university projects, but also for my first and second co-op experiences. Similarly, I have accumulated a strong understanding of OOP principles (encapsulation, abstraction, inheritance, and polymorphism) from classes, jobs, and also projects like mock Space Invaders, and am comfortably familiar with applying them to my code.
+
+I'm also a proven quick learner, and I was able to pick up Clojure within a week and a half of working at Synqrinus despite never having touched any functional programming language before.
+
+During my internship with DRW Holdings, I gained hands-on experience with backend development with Python by updating our distributed key-value database via a publish-subscribe messaging pattern. Furthermore, I also introduced service discovery to the project I was working on, fully transitioning our system from manually updating a text file to an automated system.
+
+On top of dabbling in JavaScript during my DRW internship, I gained even more frontend development skills during my interview at Synqrinus. Some examples of features I implemented was a search bar utilizing Regex patterns to grab info and display it in an interactive dropdown bar, and introducing concurrent file editing using WebSockets. 
+
+\lettersection{Why Eden?}
+As an avid gamer, I've always wanted to work professionally on a real game that would be shipped out for millions to enjoy. On top of that, I also have a deep interest in art (I'm a hobbyist digital artist! Find me at @chesyrin on Instagram) and would love to have the opportunity to have a chance to collaborate with various other teams involved in the creation of a game. I'm always looking to branch out and learn new skills and knowledge, and I believe that Eden Industries will provide me with the opportunity I seek.
+
+The projects listed on my resume can be found on my github, @julia-zhao. I look forward to hearing back from you!
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
